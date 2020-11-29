@@ -68,8 +68,8 @@ public class MyLinkedList<E> implements List<E> {
         } else {
             Node node = head;
             // 마지막 노드까지 반복
-            for (; node.next != null; node = node.next)
-                node.next = new Node(element);
+            for (; node.next != null; node = node.next) { }
+            node.next = new Node(element);
         }
         size++;
         return true;
