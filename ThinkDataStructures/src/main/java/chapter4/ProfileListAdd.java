@@ -61,8 +61,8 @@ public class ProfileListAdd {
             }
         };
 
-        int startN = 10000;
-        int endMillis = 2000;
+        int startN = 4000;
+        int endMillis = 10000;
         runProfiler("ArrayList add Beginning", timeable, startN, endMillis);
     }
 
@@ -85,7 +85,7 @@ public class ProfileListAdd {
             }
         };
 
-        int startN = 100000;
+        int startN = 128000;
         int endMillis = 2000;
         runProfiler("LinkedList add Beginning", timeable, startN, endMillis);
     }
@@ -110,7 +110,7 @@ public class ProfileListAdd {
         };
 
         int startN = 64000;
-        int endMillis = 2000;
+        int endMillis = 1000;
         runProfiler("LinkedList add End", timeable, startN, endMillis);
 
     }
