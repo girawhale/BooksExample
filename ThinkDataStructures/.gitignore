@@ -2,6 +2,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,eclipse,intellij,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,eclipse,intellij,java
 
+# 14장 Redist 실습 URL 생성
+redis_url.txt
+
 ### Eclipse ###
 .metadata
 bin/
@@ -225,3 +228,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,eclipse,intellij,java
 /.gradle/
 /build/
+src/test/
