@@ -1,18 +1,13 @@
-package chapter14;
+package chapter15;
 
-import java.io.IOException;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-
+import chapter14.TermCounter;
 import org.jsoup.select.Elements;
-
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
+
+import java.io.IOException;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * Represents a Redis-backed web search index.
