@@ -22,6 +22,9 @@ public class Order {
 
     private Date placedAt;
 
+    @ManyToOne
+    private User user;
+
     @NotBlank(message = "Name Blank")
     private String deliveryName;
 
