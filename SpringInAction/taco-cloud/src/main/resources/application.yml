@@ -1,0 +1,27 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/tacocloud
+#    username: tacodb
+#    password: tacopassword
+##    driver-class-name: com.mysql.jdbc.Driver 지정하지 않아도 스프링 부트가 데이터베이스 URL로부터 찾을수 있지만, 문제시작성
+#
+server:
+  port: 8443 #개발용 HTTPS 서버에 많이 사용
+#  ssl:
+#    key-store: file:///path/to/mykeys.jks #키스토어 파일이 생성된 경로, JAR파일에 넣는 경우는 classpath:를 URL로 지정
+#    key-store-password: letmein #키스토어를 생성할 때 지정했떤 비밀번호를 설정
+#    key-password: letmein
+
+
+logging:
+  file:
+    path: classpath://logs/
+    name: TacoCloud.log
+  level:
+    root: warn
+    org.springframework.security: debug
+
+
+taco:
+  orders:
+    pageSize: 10

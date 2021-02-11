@@ -20,10 +20,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     // HTTP 요청 경로에 대해 접근 제한과 같은 보안 관련 처리 커스텀
 
     @Autowired
-    DataSource dataSource;
-
-    @Qualifier("userRepositoryDetailsService")
-    @Autowired
     UserDetailsService userDetailsService;
 
     @Bean
